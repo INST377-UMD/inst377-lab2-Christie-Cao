@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Place an Order</title>
+        <style>
+            html {
+                background-color: rgb(147, 171, 159);
+            }
+
+            .textboxes {                
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 17px;
+            }
+
+            h1 {
+                margin-left: 400px;
+            }
+            #button {
+                background-color:rgb(214, 184, 146);
+                margin-top: 15px;
+                margin-bottom: 10px;
+                margin-left:650px;
+            }
+
+            #button:hover {
+                background-color:rgb(128, 109, 86);
+                color: white;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+    <h1>Place an Order With Blooming Bouquets!</h1>
+    <hr>
+
+    <form name="order_form" method="get" action="form_redirect.html">
+
+        <!-- Name Info -->
+        <h2>Contact Info:</h2>
+
+        <div class="textboxes">
+            <label for="first_name">First Name:</label>
+            <br>
+            <input type="text" id="first_name" required>
+        </div>
+
+        <div class="textboxes">
+            <label for="last_name">Last Name:</label>
+            <br>
+            <input type="text" id="last_name" required>
+        </div>
+
+
+        <!-- Item Info -->
+        <h2>Item Details:</h2>
+       
+        <div class="textboxes">
+
+        <label for="bouquet_type">Choose the premade bouquets you would like:</label>
+        
+        <br>
+        <input type="radio" name="bouquet_type">Pretty in Pink
+        <br>
+        <input type="radio" name="bouquet_type">Winter Wonderland
+        <br>
+        <input type="radio" name="bouquet_type">Floral Fantasy
+        <br>
+        <input type="radio" name="bouquet_type">Fall in New England
+        <br>
+        <input type="radio" name="bouquet_type">Orchid Oasis
+       
+        <br>
+        <br>
+
+        <!-- Delivery Details -->
+        <h2>Address Details:</h2>
+
+        <div class="textboxes">
+            <label for="delivery_date">Desired Delivery Date & Time:</label>
+            <br>
+            <input type="datetime-local" id="delivery_date" required>
+        </div>
+
+        <div class="textboxes">
+            <label for="street">Street:</label>
+            <br>
+            <input type="text" id="street" required>
+        </div>
+
+        <div class="textboxes">
+            <label for="address_two">Apt, suite, etc: <em>(optional)</em></label>
+            <br>
+            <input type="text" id="address_two">
+        </div>
+
+        <div class="textboxes">
+            <label for="city">City</label>
+            <br>
+            <input type="text" id="city" required>
+        </div>
+
+        <div class="textboxes">
+            <label for="state">State:</label>
+            <br>
+            <input type="text" id="state" required>
+        </div>
+
+        <div class="textboxes">
+            <label for="zipcode">Zipcode:</label>
+            <br>
+            <input type="text" id="zipcode" required>
+        </div>
+        
+        <hr>
+
+        <!-- Button -->
+        <input type="submit" value="Submit Order" id="button">
+    </form>
+
+    </body>
+</html>
